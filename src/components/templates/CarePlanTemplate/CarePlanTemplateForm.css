@@ -1,0 +1,155 @@
+.careplan-template-form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.careplan-template-form__header {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 1rem;
+}
+
+.careplan-template-form__header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 0.5rem 0;
+}
+
+.careplan-template-form__subtitle {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.careplan-template-form__form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.careplan-template-form__section {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  background: #f9fafb;
+}
+
+.careplan-template-form__section h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.careplan-template-form__section-description {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin: 0 0 1rem 0;
+}
+
+.careplan-template-form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.careplan-template-form__error {
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #dc2626;
+  padding: 0.75rem 1rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+}
+
+.careplan-template-form__empty-state {
+  background-color: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  padding: 1rem;
+  text-align: center;
+  color: #6b7280;
+  font-style: italic;
+}
+
+.careplan-template-form__checkbox-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.careplan-template-form__checkbox-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  background: white;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.careplan-template-form__checkbox-item:hover {
+  border-color: #3b82f6;
+  background: #fefbfb;
+}
+
+.careplan-template-form__checkbox-item input[type="checkbox"] {
+  margin: 0.25rem 0 0 0;
+  flex-shrink: 0;
+}
+
+.careplan-template-form__checkbox-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+  flex: 1;
+}
+
+.careplan-template-form__checkbox-content strong {
+  font-weight: 600;
+  color: #111827;
+}
+
+.careplan-template-form__checkbox-content span {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.careplan-template-form__checkbox-content small {
+  color: #9ca3af;
+  font-size: 0.75rem;
+}
+
+.careplan-template-form__actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+@media (max-width: 768px) {
+  .careplan-template-form {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  
+  .careplan-template-form__row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  
+  .careplan-template-form__actions {
+    flex-direction: column-reverse;
+  }
+}
