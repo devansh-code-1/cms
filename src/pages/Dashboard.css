@@ -1,0 +1,115 @@
+.dashboard {
+  width: 100%;
+}
+
+.template-viewer {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.template-viewer__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.template-viewer__header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.template-viewer__close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #6b7280;
+  cursor: pointer;
+  padding: 0.25rem;
+  line-height: 1;
+  transition: color 0.15s ease-in-out;
+}
+
+.template-viewer__close:hover {
+  color: #374151;
+}
+
+.template-viewer__content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.template-viewer__section {
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 1.5rem;
+}
+
+.template-viewer__section:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.template-viewer__section h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 1rem 0;
+}
+
+.template-viewer__section p {
+  margin: 0.5rem 0;
+  color: #374151;
+}
+
+.template-viewer__section p strong {
+  color: #111827;
+  margin-right: 0.5rem;
+}
+
+.template-viewer__json {
+  background: #1f2937;
+  color: #f9fafb;
+  padding: 1rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  overflow-x: auto;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.template-viewer__actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  padding: 1.5rem 2rem;
+  background: #f9fafb;
+  border-top: 1px solid #e5e7eb;
+}
+
+@media (max-width: 768px) {
+  .template-viewer {
+    margin: 1rem;
+  }
+  
+  .template-viewer__header,
+  .template-viewer__content,
+  .template-viewer__actions {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .template-viewer__actions {
+    flex-direction: column-reverse;
+  }
+}
